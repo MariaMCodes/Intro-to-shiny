@@ -24,10 +24,8 @@ library(shiny)
 # in practice the shiny template looks like this in its simplest form: 
 library(shiny)
 
-ui<- fluidPage()
-
+ui<- fluidPage("Hello World")
 server<- function(input,output){}
-
 shinyApp(ui=ui,server=server)
 # this is an actual app and will work,
 # try typing some text between the fluidpage brackets.. 
@@ -43,7 +41,7 @@ runExample("01_hello")
 # 01_hello shows a basic example of reactivity: one input, one output
 # -	User changes the position of the slider, and this alters the binwidth of the histogram
 # -	The user interface updates pretty quickly, gives a seamless experience
-# - Look at the associated code and see that it follows the tempate pattern
+# - Look at the associated code and see that it follows the template pattern
 # - All shiny apps have a two part template, a UI and a SERVER component:
 
 # The sliderInput widget defined in the UI allows the user to set a value,
@@ -63,14 +61,20 @@ runExample("02_text")
 # reactive({}) allows us to assign an expression to an object, 
 # which can be called upon in other reactive expressions.
 
-# To save on computing power you should always try to define these early and independedntly
+# To save on computing power you should always try to define these early and independently
 # and then refer to their results in later code (rather than always repeating them in your code)
 
 # Exercise 1: trace the path from the "dataset" input in the UI through the Server, and back to the "view" table in the UI
 # (hint, think in terms of inputs and outputs)
-# NOTE: Look at how the names are defined, slightly different useage to normal. 
+# NOTE: Look at how the names are defined, slightly different usage to normal. 
 #
 # Exercise 2: play around with resizing the Shiny application window - notice what happens to the layout
 #
-# Extra note.. when the app goes grey in your browser.. its idle/dead and proabbly need reloading.
+# Extra note.. when the app goes grey in your browser.. its idle/dead and probably need reloading.
 #             - Always select STOP before opening a new app.
+
+
+
+
+
+
