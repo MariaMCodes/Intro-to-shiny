@@ -104,6 +104,9 @@ library(rsconnect)
 # - copy this and paste it here:
 
 rsconnect::setAccountInfo(name='mariam04', token='7C09F935D34A5FF83DF8D355BF942428', secret='rAehTLprqAqbmNx2TH+Ng3mY7lcaGyQ2KyIN5vaU')
+library(rsconnect)
+rsconnect::deployApp('/Users/mariamempin/anaconda3/pkgs/r-formatr-1.6-r36h6115d3f_0/lib/R/library/formatR/shiny/')
+
 
 # once this line is run you should be "linked up"
 # you can set your publishing options from your RStudio IDE by clicking:
